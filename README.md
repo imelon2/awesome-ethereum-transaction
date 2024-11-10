@@ -11,7 +11,7 @@
 
 <div align="center">
 
-<img src="./img/awesome_transaction.png" width="80%" height="80%">
+<img src="./img/awesome_transaction.png" width="65%">
 
 </div>
 
