@@ -1,0 +1,20 @@
+{
+  "name": "awesome-eth-transaction",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@ethereumjs/common": "^5.0.0-alpha.1",
+    "@ethereumjs/tx": "^6.0.0-alpha.1",
+    "@ethereumjs/util": "^9.1.0",
+    "@paulmillr/trusted-setups": "^0.1.2",
+    "ethers": "^6.13.4",
+    "kzg-wasm": "^0.4.0",
+    "micro-eth-signer": "^0.12.1"
+  }
+}
