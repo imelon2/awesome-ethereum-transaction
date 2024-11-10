@@ -1,5 +1,18 @@
+</br>
 <div align="center">
-    <h1>Awesome Ethereum Transaction 💻 🪙 ⚡</h1>
-    <img src="./img/awesome_transaction.png" width="80%" height="80%">
+
+# Awesome Ethereum Transaction 💻 🪙 ⚡
+
 </div>
+
+[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
+<img src="https://img.shields.io/badge/Typescript-3178C6?style=flat-square&logo=Typescript&logoColor=white"/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=white"/>
+
+<div align="center">
+
+<img src="./img/awesome_transaction.png" width="80%" height="80%">
+
+</div>
+
 
