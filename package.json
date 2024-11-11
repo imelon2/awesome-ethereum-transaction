@@ -13,6 +13,7 @@
     "@ethereumjs/tx": "^6.0.0-alpha.1",
     "@ethereumjs/util": "^9.1.0",
     "@paulmillr/trusted-setups": "^0.1.2",
+    "dotenv": "^16.4.5",
     "ethers": "^6.13.4",
     "kzg-wasm": "^0.4.0",
     "micro-eth-signer": "^0.12.1"

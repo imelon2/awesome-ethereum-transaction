@@ -18,16 +18,18 @@ async function main() {
 
   const messageToBlob = "Hello 4844"; // will convert to bytes to used `utf8ToBytes`
   const blobs = getBlobs(messageToBlob);
-  console.log(blobs[0].byteLength);
+  console.log(`1 Blob data lenth: ${blobs[0].byteLength}`);
+
+  const blob_versioned_hashes = commitmentsToVersionedHashes(blobs);
+  console.log(`1 Blob versioned hash: ${bytesToHex(blob_versioned_hashes[0])}`);
 
   // `blobsToCommitments``
   const commitment = kzg
-    .blobToKzgCommitment(bytesToHex(blobs[0]))
-    .toLowerCase();
-  console.log(commitment);
-
-  const blob_versioned_hashes = commitmentsToVersionedHashes(blobs);
-  console.log(bytesToHex(blob_versioned_hashes[0]));
+    .blobToKzgCommitment(bytesToHex(blobs[0])).toLowerCase();
+  console.log(`1 Blob kzg commitment: ${commitment}`);
+  
+  const proof = kzg.computeBlobProof(bytesToHex(blobs[0]),commitment)
+  console.log(`1 Blob kzg proof: ${proof.toString()}`);
 }
 
 void main();
