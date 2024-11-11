@@ -17,10 +17,6 @@ const main = async () => {
   })
 
 
-  const provider = new ethers.JsonRpcProvider("https://ethereum-mainnet.g.allthatnode.com/full/evm/5da65013a9004d8da1983f17cae83366")
-//   const provider = new ethers.JsonRpcProvider("https://ethereum-sepolia.g.allthatnode.com/full/evm/5da65013a9004d8da1983f17cae83366")
-//   const provider = new ethers.JsonRpcProvider("http://localhost:8545")
-  const signer = new Wallet("0x2589d88a28c8025fe23ca08c3ceb959ca02347dd44700bd35346e1e57397a0a9")
 
 //   const txHash = "0x9c1fbda4f649ac806ab0faefbe94e1a60282eb374ead6aa01bac042f52b28a8c"
 //   const blobTx = await provider.getTransaction(txHash)
