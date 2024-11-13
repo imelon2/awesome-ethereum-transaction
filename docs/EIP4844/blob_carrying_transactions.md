@@ -20,3 +20,18 @@ Blob Carrying Transactions은 Blob을 작성할 수 있는 새로운 필드(fiel
     <img src="./img/blob_carrying_transactions_1.png" width="80%"> 
 </div>
 Blob은 하나당 32 bytes의 용량를 갖는 4096개의 필드로 구성되어 있다. 즉, 1 Blob에 최대 131,072 bytes (4096 &times 32 bytes  ≈ 128kB)의 용량(blobSize)를 수용할 수 있게 설계됬다.
+
+</br>
+
+<div align="center">
+
+```
+0 <= x < 52435875175126190479447740508185965837690552500527637822603658699938581184513
+```
+</div>
+
+각 필드에는 위에 보이는 범위 내의 데이터만 저장할수 있다. 그 이유는 암호학적으로 검증하기 위해 사용하는 KZG가 타원곡선의 종류 중 하나인 BLS12–381를 사용하기 때문이다. 여기서 x의 최대값인 *5243…4513* 는 BLS12–381의 Field element (또는 modulus)이다.
+
+> [!NOTE]
+> KZG Polynomial Commitments Scheme의 암호학적 원리와 자세한 내용은 다음 시리즈(EIP-4844 시리즈 #2)에서 자세히 다룰것이며, 
+> 지금은 Blob이 갖는 압축과 증명 기능을 위해 사용하는 암호학이라고 생각하고 넘어가자.
